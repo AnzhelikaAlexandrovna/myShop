@@ -14,6 +14,8 @@ $is_new = get_product_is_new($id);
 $is_last = get_product_is_last($id);
 $product_class = 'item';
 
+$features = get_product_is_features($id);
+
 if ($discount > 0) {
     $price_with_discount = $price - $discount;
 }
