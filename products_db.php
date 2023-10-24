@@ -235,6 +235,31 @@ function get_products() {
   ];
 }
 
+function get_filters() {
+  return [
+    0 => [
+      'url' => 'all',
+      'name' => 'Все товары',
+    ],
+    1 => [
+      'url' => 'lighting',
+      'name' => 'Освещение',
+    ],
+    2 => [
+      'url' => 'furniture',
+      'name' => 'Мебель',
+    ],
+    3 => [
+      'url' => 'textile',
+      'name' => 'Текстиль',
+    ],
+    4 => [
+      'url' => 'other',
+      'name' => 'Прочее',
+    ]
+  ];
+}
+
 function get_product_attribute($id, $attr) {
   $products = get_products();
   $result = $products[$id][$attr] ?? null;

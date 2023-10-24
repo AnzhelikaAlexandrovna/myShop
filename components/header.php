@@ -13,7 +13,7 @@
           <img src="img/logo-full.svg" width="62" height="17" alt="Логотип магазина gloevk">
         </a>
         <ul class="navigation-list">
-          <li><a href="">Каталог</a></li>
+          <li><a href="catalog.php">Каталог</a></li>
           <li><a href="delivery.php">Доставка</a></li>
           <li><a href="">Контакты</a></li>
           <li><a href="">Блог</a></li>
