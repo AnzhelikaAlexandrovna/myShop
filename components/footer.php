@@ -1,6 +1,6 @@
     <footer class="site-footer">
       <div class="container">
-        <p class="copyright">© Кекс, 2019</p>
+        <p class="copyright">© Лика, 2023</p>
         <ul class="navigation-list">
           <li><a href="">Каталог</a></li>
           <li><a href="">Доставка</a></li>

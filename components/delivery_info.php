@@ -8,12 +8,14 @@
         <th>Цена</th>
         <th>Стоимость доставки</th>
       </tr>
-      <tr>
-        <td><img src="<?= $img_url ?>" width="68" height="52" alt="<?= $title ?>"></td>
-        <td><?= $title ?></td>
-        <td class="item-price"><?= $final_price ?></td>
-        <td class="delivery-cost"><?= $delivery_cost ?></td>
-      </tr>
+      <?php foreach($order as $id): ?>
+        <tr>
+          <td><img src="<?= get_img_url($id) ?>" width="68" height="52" alt="<?= get_product_title($id) ?>"></td>
+          <td><?= get_product_title($id) ?></td>
+          <td class="item-price"><?= get_final_price($id) ?></td>
+          <td class="delivery-cost"><?= get_delivery_cost($id) ?></td>
+        </tr>
+      <?php endforeach; ?>
     </table>
   </div>
 </section>

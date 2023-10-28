@@ -862,6 +862,78 @@ span.price:empty::after,
   background-image: url("img/feature-protected.svg");
 }
 
+.order {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.order-title {
+  padding: 0;
+  margin: 5px 0;
+
+  font-family: "Georgia", "Times", serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.delivery-cost {
+  font-weight: 700;
+  color: #ff8a00;
+}
+
+.delivery-cost::after,
+.item-price::after {
+  content: "₽";
+}
+
+.delivery-cost:empty::after,
+.item-price:empty::after {
+  content: "";
+}
+
+.order-list {
+  width: 100%;
+  margin: 10px 0 20px;
+
+  border-collapse: collapse;
+
+  text-align: left;
+}
+
+.order-list img {
+  width: 68px;
+  height: 52px;
+  margin-bottom: -5px;
+}
+
+.order-list tr {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.order-list td {
+  padding: 10px 20px 10px 0;
+}
+
+.order-list th:last-child {
+  width: 140px;
+}
+
+.order-list th {
+  padding: 10px 20px 10px 0;
+
+  font-family: "Georgia", "Times", serif;
+  font-style: italic;
+  font-weight: 400;
+
+  vertical-align: bottom;
+}
+
+.order-list td:last-child,
+.order-list th:last-child {
+  padding-right: 0;
+}
+
 .site-footer {
   background-color: #847462;
 }
