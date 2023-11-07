@@ -117,6 +117,7 @@ a {
   font-weight: 400;
 }
 
+.brands-title b,
 .intro-title b,
 .features-title b,
 .delivery-text b {
@@ -267,6 +268,51 @@ a {
 
   background-color: #ff8a00;
   border-radius: 4px 0 0 4px;
+}
+
+.product-card:hover,
+.product-card:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-card:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  order: -1;
+}
+
+.product-card h3 {
+  margin: 0 0 2px 0;
+  padding: 0;
+
+  font-family: "Georgia", "Times", serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.product-card p {
+  margin: 0 0 8px 0;
+  padding: 0;
+
+  font-family: "Georgia", "Times", serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.product-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: auto;
 }
 
 .item-title {
@@ -430,7 +476,6 @@ a {
 }
 
 .catalog {
-  padding-top: 15px;
   padding-bottom: 10px;
 }
 
@@ -498,88 +543,6 @@ a {
   display: flex;
 }
 
-.product-card {
-  position: relative;
-
-  display: flex;
-  width: 132px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  padding: 124px 12px 12px;
-
-  flex-direction: column;
-
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.product-card-new {
-  position: relative;
-}
-
-.product-card-new::after {
-  position: absolute;
-  content: "new";
-
-  width: 34px;
-  height: 15px;
-  top: 8px;
-  right: -2px;
-
-  font-weight: 700;
-  line-height: 14px;
-  color: #ffffff;
-  text-align: center;
-
-  background-color: #ff8a00;
-  border-radius: 4px 0 0 4px;
-}
-
-.product-card:hover,
-.product-card:focus {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.product-card:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.product-card img {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  order: -1;
-}
-
-.product-card h3 {
-  margin: 0 0 2px 0;
-  padding: 0;
-
-  font-family: "Georgia", "Times", serif;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
-.product-card p {
-  margin: 0 0 8px 0;
-  padding: 0;
-
-  font-family: "Georgia", "Times", serif;
-  font-style: italic;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.product-options {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: auto;
-}
-
 .price {
   margin-right: 10px;
   flex-shrink: 1;
@@ -633,44 +596,6 @@ a {
 .color-white {
   background-color: white;
   border: 1px solid #c0c0c0;
-}
-
-.product-card:hover,
-.product-card:focus {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.product-card:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.product-card img {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  order: -1;
-}
-
-.product-card h3 {
-  margin: 0 0 2px 0;
-  padding: 0;
-
-  font-family: "Georgia", "Times", serif;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
-.product-card p {
-  margin: 0 0 8px 0;
-  padding: 0;
-
-  font-family: "Georgia", "Times", serif;
-  font-style: italic;
-  font-size: 13px;
-  line-height: 16px;
 }
 
 .price {
@@ -786,11 +711,83 @@ span.price:empty::after,
   padding: 0;
 }
 
+.brands {
+  padding-top: 20px;
+  padding-bottom: 4px;
+
+  background-color: #f8f8f8;
+}
+
+.brands-list {
+  display: flex;
+
+  padding: 0;
+  margin: 16px -20px 0 0;
+
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.brands-list li {
+  position: relative;
+
+  width: 112px;
+  margin: 0 20px 16px 0;
+  padding-top: 58px;
+}
+
+.brands-list li::before {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  left: 0;
+
+  width: 112px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+}
+
+.brands-ehm::before {
+  background-image: url("img/brands-ehm-grey.svg");
+}
+
+.brands-cubic::before {
+  background-image: url("img/brands-cubic-grey.svg");
+}
+
+.brands-tehnodom::before {
+  background-image: url("img/brands-tehnodom-grey.svg");
+}
+
+.brands-dg::before {
+  background-image: url("img/brands-dg-grey.svg");
+}
+
+.brands-ehm:hover::before {
+  background-image: url("img/brands-ehm.svg");
+}
+
+.brands-cubic:hover::before {
+  background-image: url("img/brands-cubic.svg");
+}
+
+.brands-tehnodom:hover::before {
+  background-image: url("img/brands-tehnodom.svg");
+}
+
+.brands-dg:hover::before {
+  background-image: url("img/brands-dg.svg");
+}
+
 .features {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
+.brands-title,
 .features-title,
 .products-title {
   margin: 0;
@@ -863,7 +860,6 @@ span.price:empty::after,
 }
 
 .order {
-  padding-top: 15px;
   padding-bottom: 10px;
 }
 

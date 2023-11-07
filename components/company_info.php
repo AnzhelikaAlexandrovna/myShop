@@ -1,11 +1,4 @@
-<section class="intro">
-  <div class="container">
-    <h1 class="intro-title">Комфорт и уют в&nbsp;<b>вашей</b> квартире</h1>
-    <p>Разнообразные товары для дома с доставкой по всей планете</p>
-  </div>
-</section>
-
-<section class="popular-products">
+<!-- <section class="popular-products">
   <div class="container">
     <h2 class="visually-hidden">Популярные товары</h2>
     <ul class="products-list">
@@ -33,6 +26,18 @@
           <img src="img/item-bletub.jpg" width="156" height="120" alt="Потолочная люстра «Блетуб»">
         </a>
       </li>
+    </ul>
+  </div>
+</section>   -->
+
+<section class="brands">
+  <div class="container">
+    <h2 class="brands-title">Представляем продукцию <b>мировых</b> брендов</h2>
+    <ul class="brands-list">
+      <?php $brands = ['ehm', 'cubic', 'tehnodom', 'dg'];
+        foreach($brands as $value): ?>
+        <li class="brands-<?= $value ?>"></li>
+      <?php endforeach; ?>
     </ul>
   </div>
 </section>
