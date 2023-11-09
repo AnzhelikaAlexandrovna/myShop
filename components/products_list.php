@@ -1,3 +1,7 @@
+<section class="banner">
+  <p>Маркетологи объявили <?= $today ?> года<br>самым удачным временем для покупок!</p>
+</section>
+
 <section class="catalog">
   <div class="container">
     <h1 class="catalog-title">Каталог товаров</h1>
@@ -18,24 +22,30 @@
     </ul>
 
     <ul class="products-list">
-        <?php foreach($items as $item): ?>
-        <?php if ($item['type'] === $type || $type === 'all'): ?>
+        <?php foreach($filteredProducts as $i => $item): ?>
         <li>
-        <a class="product-card" href="#">
-            <h3><?= $item['title'] ?></h3>
-            <img src="<?= $item['img_url'] ?>" width="156" height="120" alt="<?= $item['title'] ?>">
-            <div class="product-options">
-            <span class="price"><?= $item['price'] ?></span>
-            <ul class="colors-list">
-                <?php foreach ($item['colors'] as $color): ?>
-                <li class="color-<?= $color ?>"></li>
-                <?php endforeach;?>
-            </ul>
-            </div>
-        </a>
+            <a class="product-card" href="product.php?product_id=<?= $i ?>">
+                <h3><?= $item['title'] ?></h3>
+                <img src="<?= $item['img_url'] ?>" width="156" height="120" alt="<?= $item['title'] ?>">
+                <div class="product-options">
+                    <span class="price"><?= $item['price'] ?></span>
+                    <ul class="colors-list">
+                        <?php foreach ($item['colors'] as $color): ?>
+                        <li class="color-<?= $color ?>"></li>
+                        <?php endforeach;?>
+                    </ul>
+                </div>
+            </a>
         </li>
-        <?php endif; ?>
         <?php endforeach; ?>
     </ul>
+
+    <ol class="pagination">
+      <?php for ($i = 1; $i <= $pages; $i = $i + 1): ?>
+      <li>
+        <a href="catalog.php?page=<?= $i ?>&product_type=<?= $type ?>" class="<?= $i === $currentPage ? 'current' : '' ?>"><?= $i ?></a>
+      </li>
+      <?php endfor; ?>
+    </ol>
   </div>
 </section>

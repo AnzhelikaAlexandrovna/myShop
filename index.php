@@ -33,6 +33,7 @@ shuffle($random_ids);
 
 
 require('components/header.php');
+require('components/intro.php');
 
 function product_class_promo() {
     $class_promo = 'product-card';
