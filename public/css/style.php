@@ -14,6 +14,7 @@ $img10 = "img/brands-dg.svg";
 $img11 = "img/icon-twitter.svg";
 $img12 = "img/icon-instagram.svg";
 $img13 = "img/icon-facebook.svg";
+$img14 = "img/icon-hot.svg";
 ?>
 
 .banner {
@@ -66,4 +67,8 @@ $img13 = "img/icon-facebook.svg";
 
 .social-link-facebook {
     background-image: url(<?= path($img13) ?>);
+}
+
+.item-hot .item-img::before {
+    background-image: url(<?= path($img14) ?>);
 }

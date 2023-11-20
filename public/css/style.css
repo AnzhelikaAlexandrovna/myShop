@@ -375,7 +375,7 @@ a {
   left: 0;
 
   background-color: #fff3e5;
-  background-image: url("img/icon-hot.svg");
+  /* background-image: url("img/icon-hot.svg"); */
   background-repeat: no-repeat;
   background-size: 11px 14px;
   background-position: 62px 10px;
