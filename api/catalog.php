@@ -1,6 +1,6 @@
 <?php
-require('products_db.php');
-require('components/header.php');
+require_once('products_db.php');
+require_once('components/header.php');
 
 // Дата акции сегодняшнего дня
 $day = date('j');
@@ -31,5 +31,5 @@ $currentPage = isset($_GET['page']) ? intval($_GET['page']): 1;
 $offset = ($currentPage - 1) * $limit;
 $filteredProducts = array_slice($filteredProducts, $offset, $limit, true);
 
-require('components/products_list.php');
-require('components/footer.php');
+require_once('components/products_list.php');
+require_once('components/footer.php');

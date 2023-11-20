@@ -1,6 +1,6 @@
 <?php
-require('products_db.php');
-require('components/header.php');
+require_once('products_db.php');
+require_once('components/header.php');
 
 $id = $_GET['product_id'];
 
@@ -28,5 +28,5 @@ if ($discount > 1400 || $is_last) {
     $product_class = $product_class . ' item-hot';
 }
 
-require('components/product_info.php');
-require('components/footer.php');
+require_once('components/product_info.php');
+require_once('components/footer.php');

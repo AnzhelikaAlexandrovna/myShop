@@ -1,5 +1,5 @@
 <?php
-require('products_db.php');
+require_once('products_db.php');
 
 $products = get_products();
 
@@ -41,9 +41,9 @@ function product_class_promo($product) {
   return $class_promo;
 }
 
-require('components/header.php');
-require('components/intro.php');
+require_once('components/header.php');
+require_once('components/intro.php');
 
-require('components/promo.php');
-require('components/company_info.php');
-require('components/footer.php');
+require_once('components/promo.php');
+require_once('components/company_info.php');
+require_once('components/footer.php');

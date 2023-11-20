@@ -1,6 +1,6 @@
 <?php
-require('products_db.php');
-require('components/header.php');
+require_once('products_db.php');
+require_once('components/header.php');
 
 $order = [2, 7, 11, 15, 20];
 
@@ -28,5 +28,5 @@ function get_delivery_cost($id) {
   return $delivery_cost;
 }
 
-require('components/delivery_info.php');
-require('components/footer.php');
+require_once('components/delivery_info.php');
+require_once('components/footer.php');

@@ -101,7 +101,7 @@ a {
 
 
   box-sizing: border-box;
-  background-image: url("img/index-background.jpg");
+  /* background-image: url("img/index-background.jpg"); */
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -748,7 +748,7 @@ span.price:empty::after,
 
   background-repeat: no-repeat;
 }
-
+/*
 .brands-ehm::before {
   background-image: url("img/brands-ehm-grey.svg");
 }
@@ -780,7 +780,7 @@ span.price:empty::after,
 .brands-dg:hover::before {
   background-image: url("img/brands-dg.svg");
 }
-
+*/
 .features {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -981,7 +981,7 @@ span.price:empty::after,
   width: 100%;
 
   background-color: #ff8a00;
-  background-image: url("img/bg_img.svg");
+  /* background-image: url("img/bg_img.svg"); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1060,7 +1060,7 @@ span.price:empty::after,
   background-repeat: no-repeat;
   background-position: center;
 }
-
+/*
 .social-link-twitter {
   background-image: url("img/icon-twitter.svg");
 }
@@ -1072,7 +1072,7 @@ span.price:empty::after,
 .social-link-facebook {
   background-image: url("img/icon-facebook.svg");
 }
-
+*/
 .social-list a:hover,
 .social-list a:focus {
   opacity: 0.5;

@@ -11,8 +11,8 @@
       <?php foreach($order as $id): ?>
         <tr>
           <td>
-            <a href="product.php?product_id=<?= $id?>">
-              <img src="<?= get_img_url($id) ?>" width="68" height="52" alt="<?= get_product_title($id) ?>">
+            <a href="/api/product.php?product_id=<?= $id?>">
+              <img src="<?= path(get_img_url($id)) ?>" width="68" height="52" alt="<?= get_product_title($id) ?>">
             </a>
           </td>
           <td><?= get_product_title($id) ?></td>

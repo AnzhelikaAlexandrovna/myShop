@@ -2,9 +2,9 @@
       <div class="container">
         <p class="copyright">© Лика, 2023</p>
         <ul class="navigation-list">
-          <li><a href="catalog.php">Каталог</a></li>
-          <li><a href="delivery.php">Доставка</a></li>
-          <li><a href="contacts.php">Контакты</a></li>
+          <li><a href="/api/catalog.php">Каталог</a></li>
+          <li><a href="/api/delivery.php">Доставка</a></li>
+          <li><a href="/api/contacts.php">Контакты</a></li>
         </ul>
         <ul class="social-list">
           <li>

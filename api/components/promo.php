@@ -4,12 +4,12 @@
     <ul class="products-list">
       <?php foreach($random_ids as $id): ?>
         <li>
-          <a class="<?= product_class_promo($promo_products[$id]) ?>" href="product.php?product_id=<?= $id ?>">
+          <a class="<?= product_class_promo($promo_products[$id]) ?>" href="/api/product.php?product_id=<?= $id ?>">
             <h3><?= get_product_title($id) ?></h3>
             <div class="product-options">
               <span class="price"><?= get_product_price($id) ?></span>
             </div>
-            <img src="<?= get_img_url($id) ?>" width="156" height="120" alt="<?= get_product_title($id) ?>">
+            <img src="<?= path(get_img_url($id)) ?>" width="156" height="120" alt="<?= get_product_title($id) ?>">
           </a>
         </li>
       <?php endforeach; ?>

@@ -15,7 +15,7 @@
         <?php endif; ?>
 
         <li>
-            <a class="<?= $filter_class ?>" href="catalog.php?product_type=<?= $filter['url'] ?>"><?= $filter['name'] ?></a>
+            <a class="<?= $filter_class ?>" href="/api/catalog.php?product_type=<?= $filter['url'] ?>"><?= $filter['name'] ?></a>
         </li>
 
         <?php endforeach; ?>
@@ -24,9 +24,9 @@
     <ul class="products-list">
         <?php foreach($filteredProducts as $i => $item): ?>
         <li>
-            <a class="product-card" href="product.php?product_id=<?= $i ?>">
+            <a class="product-card" href="/api/product.php?product_id=<?= $i ?>">
                 <h3><?= $item['title'] ?></h3>
-                <img src="<?= $item['img_url'] ?>" width="156" height="120" alt="<?= $item['title'] ?>">
+                <img src="<?= path($item['img_url']) ?>" width="156" height="120" alt="<?= $item['title'] ?>">
                 <div class="product-options">
                     <span class="price"><?= $item['price'] ?></span>
                     <ul class="colors-list">
@@ -43,7 +43,7 @@
     <ol class="pagination">
       <?php for ($i = 1; $i <= $pages; $i = $i + 1): ?>
       <li>
-        <a href="catalog.php?page=<?= $i ?>&product_type=<?= $type ?>" class="<?= $i === $currentPage ? 'current' : '' ?>"><?= $i ?></a>
+        <a href="/api/catalog.php?page=<?= $i ?>&product_type=<?= $type ?>" class="<?= $i === $currentPage ? 'current' : '' ?>"><?= $i ?></a>
       </li>
       <?php endfor; ?>
     </ol>

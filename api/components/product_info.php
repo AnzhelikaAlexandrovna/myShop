@@ -3,7 +3,7 @@
     <h1 class="item-title"><?= $title ?></h1>
     <div class="item-container">
       <div class="item-img">
-        <img src="<?= $img_url ?>" width="290" height="222" alt="<?= $title ?>">
+        <img src="<?= path($img_url) ?>" width="290" height="222" alt="<?= $title ?>">
       </div>
       <div class="item-info">
         <h2 class="title-advantages">Преимущества товара:</h2>
