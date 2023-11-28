@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин товаров для дома</title>
     <link href="<?= path('css/style.css') ?>" rel="stylesheet">
-    <link type="text/css" href="<?= path('css/style.php') ?>" rel="stylesheet">
+    <link type="text/css" href="<?= cssPath("style.php") ?>" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">

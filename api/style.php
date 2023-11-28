@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/../../api/components/path.php');
+require_once(__DIR__ . '/components/path.php');
 header("Content-type: text/css");
 $img1 = "img/bg_img.svg";
 $img2 = "img/index-background.jpg";
